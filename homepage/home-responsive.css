@@ -38,6 +38,9 @@
 }
 
 @media (max-width: 520px) {
+    .nav-links-responsive {
+        padding-left: 25px;
+    }
     .nav-brand {
         margin-left: 25px;
     }
