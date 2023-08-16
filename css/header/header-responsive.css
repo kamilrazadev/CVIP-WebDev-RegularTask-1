@@ -2,6 +2,9 @@
     nav {
         justify-content: space-between;
     }
+    .nav-link {
+        color: white;
+    }
     .nav-links {
         display: none;
     }

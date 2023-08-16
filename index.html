@@ -8,96 +8,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Styling CSS Link -->
-    <link rel="stylesheet" href="./homepage/home.css">
+    <link rel="stylesheet" href="./css/header/header.css">
+    <link rel="stylesheet" href="./css/about/about.css">
+    <link rel="stylesheet" href="./css/products/products.css">
     <!-- Responsive CSS Link -->
-    <link rel="stylesheet" href="./homepage/home-responsive.css">
+    <link rel="stylesheet" href="./css/header/header-responsive.css">
+    <link rel="stylesheet" href="./css/about/about-responsive.css">
+    <link rel="stylesheet" href="./css/products/products-responsive.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="png">
     <!-- Title -->
     <title>MK Store - Shop Online</title>
 </head>
 <body>
-    <div class="header">
+    <!-- HERO SECTION -->
+    <!-- <div class="loginModal">
+        <div class="login-form">
+            <input type="text" class="input">
+            <input type="text" class="input">
+        </div>
+    </div> -->
+    <section class="header">
         <div class="dull">
-            <div class="navbar">
-                <nav>
-                    <h3 class="nav-brand">
-                        <a href="#">DIGISTORE</a>
-                    </h3>
-                    <!-- Large Screen Nav Bar -->
-                    <ul class="nav-links">
-                        <li class="nav-link">
-                            Home
-                            <img src="./assets/icons/homepageIcon.png" class="nav-icon icon-small"/>
-                        </li>
-                        <li class="nav-link">
-                            About
-                            <img src="./assets/icons/aboutIcon.png" class="nav-icon icon-small"/>
-                        </li>
-                        <li class="nav-link">
-                            Products
-                            <img src="./assets/icons/productsIcon.png" class="nav-icon icon-large"/>
-                        </li>
-                        <li class="nav-link">
-                            Categories
-                            <img src="./assets/icons/categoryIcon.png" class="nav-icon icon-medium"/>
-                        </li>
-                        <li class="nav-link">
-                            Cart
-                            <img src="./assets/icons/cartIcon.png" class="nav-icon icon-small"/>
-                        </li>
-                    </ul>
-                    <!-- Responsive Nav Bar -->
-                    <ul class="nav-links-responsive" id="nav-links">
-                        <li class="nav-link">
-                            Home
-                            <img src="./assets/icons/homepageIcon.png" class="nav-icon icon-small"/>
-                        </li>
-                        <li class="nav-link">
-                            About
-                            <img src="./assets/icons/aboutIcon.png" class="nav-icon icon-small"/>
-                        </li>
-                        <li class="nav-link">
-                            Products
-                            <img src="./assets/icons/productsIcon.png" class="nav-icon icon-large"/>
-                        </li>
-                        <li class="nav-link">
-                            Categories
-                            <img src="./assets/icons/categoryIcon.png" class="nav-icon icon-medium"/>
-                        </li>
-                        <li class="nav-link">
-                            Cart
-                            <img src="./assets/icons/cartIcon.png" class="nav-icon icon-small"/>
-                        </li>
-                        <li class="nav-link">
-                            Login
-                            <img src="./assets/icons/loginIcon.png" class="login-icon"/>
-                        </li>
-                        <li class="nav-search">
-                            <input type="text" class="search-input" id="search-input">
-                            <img src="./assets/icons/cancelIcon.png" alt="Cancel" class="cancel-icon" id="cancel-icon" onclick="hideSearchInput()">
-                            <img src="./assets/icons/searchIcon.png" alt="Search" class="search-icon" onclick="showSearchInput()" >
-                        </li>
-                    </ul>
-                    <!-- Nav Side Bar -->
-                    <ul class="nav-side">
-                        <li class="nav-link">
-                            Login
-                            <img src="./assets/icons/loginIcon.png" class="login-icon"/>
-                        </li>
-                        <li class="nav-search">
-                            <input type="text" class="search-input" id="search-input">
-                            <img src="./assets/icons/cancelIcon.png" alt="Cancel" class="cancel-icon" id="cancel-icon" onclick="hideSearchInput()">
-                            <img src="./assets/icons/searchIcon.png" alt="Search" class="search-icon" onclick="showSearchInput()" >
-                        </li>
-                    </ul>
-                    <!-- NavBar Toggle Button -->
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox" class="toggle" onclick="showNavLinks()">
-                        <div class="bars" id="bar1"></div>
-                        <div class="bars" id="bar2"></div>
-                        <div class="bars" id="bar3"></div>
-                    </label>
-                </nav>
-
+            <div class="navbar" id="navbar">
+                <!-- NavBar Here from NavBar.js -->
             </div>
     
             <div class="hero-content">
@@ -106,17 +40,48 @@
                     <h1 class="hero-heading-large">TECHNOLOGIES</h1>  
                     <p class="hero-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum tenetur assumenda esse sit sunt et asperiores harum nostrum animi Lorem, ipsum.</p>          
                     <div class="hero-btn">
-                        <button>OUR PRODUCTS</button>
-                        <button>CONTACT US</button>
+                        <button>
+                            <a href="#products-section">OUR PRODUCTS</a>
+                        </button>
+                        <button>
+                            <a href="#contact-section">CONTACT US</a>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about-section">
+        <div>
+            <div class="section-heading-div">
+                <h1 class="section-heading">ABOUT US</h1>
+                <div class="heading-line"></div>
+            </div>
+        </div>
+        <div>
+            <img src="./assets/" alt="">
+        </div>
 
 
+    </section>
+    <!-- PRODUCTS SECTION -->
+    <section class="products-section" id="products-section">
+        <h1 class="section-heading">OUR PRODUCTS</h1>
+        <div class="products-container" id="products-container">
+            
+        </div>
+    </section>
 
-    <script src="./homepage/home.js"></script>
-    <script src="./NavBar.js"></script>
+    <section id="contact-section">
+        <h1 class="section-heading">CONTACT US</h1>
+    </section>
+
+    <section id="footer">
+        Footer 
+    </section>
+
+    <script src="./Components/ProductCard.js"></script>
+    <script src="./Components/NavBar.js"></script>
 </body>
 </html>
