@@ -1,0 +1,10 @@
+@media (max-width: 1075px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 400px;
+        height: auto;
+    }
+}

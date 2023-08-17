@@ -374,3 +374,14 @@ nav ul {
 }
 
 
+
+.gaps-heading {
+    margin: 25px 0;
+}
+
+#footer {
+    padding: 10px 0;
+    background-color: #3c3c3c;
+    text-align: center;
+    color: white;
+}

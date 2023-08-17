@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/header/header.css">
     <link rel="stylesheet" href="./css/about/about.css">
     <link rel="stylesheet" href="./css/products/products.css">
+    <link rel="stylesheet" href="./css/contact/contact.css">
     <!-- Responsive CSS Link -->
     <link rel="stylesheet" href="./css/header/header-responsive.css">
     <link rel="stylesheet" href="./css/about/about-responsive.css">
@@ -58,6 +59,10 @@
                 <h1 class="section-heading">ABOUT US</h1>
                 <div class="heading-line"></div>
             </div>
+            <p class="about-disc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ut distinctio voluptatum similique ipsum magni quidem magnam praesentium aliquam sed!</p>
+            <button class="btn">
+                <a href="#">READ MORE</a>
+            </button>
         </div>
         <div>
             <img src="./assets/backgrounds/hero-side-bg.png" alt="About Section Img" class="about-img">
@@ -65,18 +70,50 @@
     </section>
     <!-- PRODUCTS SECTION -->
     <section class="products-section" id="products-section">
-        <h1 class="section-heading">OUR PRODUCTS</h1>
-        <div class="products-container" id="products-container">
-            
+        <div class="section-heading-div">
+            <h1 class="section-heading gaps-heading">OUR PRODUCTS</h1>
+            <div class="heading-line"></div>
         </div>
+        <h3 class="item-heading">LAPTOPS</h3>
+        <div class="products-container" id="laptops-container">
+            <!--product cards here from ProductCard.js  -->
+        </div>
+
+        <h3 class="item-heading">MOBILES</h3>
+        <div class="products-container" id="mobiles-container">
+            <!--product cards here from ProductCard.js  -->
+        </div>
+
+        <h3 class="item-heading">TABLETS</h3>
+        <div class="products-container" id="tablets-container">
+            <!--product cards here from ProductCard.js  -->
+        </div>        
     </section>
 
     <section id="contact-section">
-        <h1 class="section-heading">CONTACT US</h1>
+    <div class="section-heading-div">
+        <h1 class="section-heading gaps-heading">CONTACT US</h1>
+        <div class="heading-line"></div>
+    </div>
+    <div class="form-div">
+        <div class="form-container">
+            <form class="form">
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="text" id="email" name="email" required="">
+              </div>
+              <div class="form-group">
+                <label for="textarea">How Can We Help You?</label>
+                <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+              </div>
+              <button class="form-submit-btn" type="submit">Submit</button>
+            </form>
+          </div>
+    </div>
     </section>
 
     <section id="footer">
-        Footer 
+        <h5>All Rights Reserved M Kamil Raza &copy;2023</h5> 
     </section>
 
     <script src="./Components/ProductCard.js"></script>
